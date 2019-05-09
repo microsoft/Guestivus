@@ -1,6 +1,29 @@
 
-# Contributing
+# Guestivus: The Git client for the rest of us!
 
+# Motivation
+Git is a lot of things, but user friendly isn't one of them.  As the world moves to Git as a primary solution for version
+control, certain sectors are in danger of being marooned on proprietary technologies which have much friendly visual clients.
+
+Git is great if you have a Computer Science degree but almost impossible to use if you're an artist, creative or someone who needs
+to interact with version control systems as part of their work but don't care about the intricacies of branches, merging or 
+even command line usage.  Guestivus aims to bridge this gap by presenting a subset of Git features in an easy to use visual client. 
+Git features are mapped to a more user friendly "on rails" experience.  Guestivus focuses on binary file tracking between multiple users 
+and less on merging and branching.
+
+# Target Audience
+- Game Development Art and Design Teams
+- CG & VFX teams
+- Less technical people who need to collaborate on lockable binary files
+
+# How Guestivus uses Git
+Guestivus is not a hack and will not subvert any Git functionality.  Other more technical people can still use standard Git tools to interact with the 
+same repos used by Guestivus.  What it will do is use an enforced subset of Git functionality to ensure a stable and friendly user experience.  
+Guestivus utilizes Git LFS 2 file locking to ensure the stability of systems relying on large numbers of binary files edited by large numbers of people.
+
+
+
+# Contributing
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
 the rights to use your contribution. For details, visit https://cla.microsoft.com.
