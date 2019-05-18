@@ -1,0 +1,11 @@
+docutils;
+pygments;
+pypiwin32;
+kivy.deps.sdl2;
+kivy.deps.glew;
+azure-storage-file;
+kivy.deps.angle;
+kivy;
+
+
+
