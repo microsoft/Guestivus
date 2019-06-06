@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Guestivus</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/Themes/Bootstrap_Dark_Orange.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="stylesheet" href="./js/jstree/themes/default/style.min.css"/>
+ 
+    <!-- Bootstrap Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>let Split = require('split-grid');</script>
+    <script>let $ = require('jquery');</script>   
+    <script>require('popper.js');</script>
+    <script>require('bootstrap');</script>
+    <script src="./js/jstree/jstree.min.js"></script>
+
+    
+  </head>
+  <body>
+    <div id="navBar">
+        <nav class="navbar navbar-dark py-0 bg-primary navbar-expand-lg py-md-0">
+            <a class="navbar-brand" href="#">Bootstrap 4</a>
+            <button class="navbar-toggler mt-1" type="button" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarNav">
+                <ul class="navbar-nav border-0">
+                    <li class="nav-item py-0 border-0"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item py-0 border-0"><a href="#" class="nav-link">Link</a></li>
+                    <li class="nav-item py-0 border-0"><a href="#" class="nav-link">Link</a></li>
+                    <li class="nav-item py-0 border-0"><a href="#" class="nav-link">More</a></li>
+                    <li class="nav-item py-0 border-0"><a href="#" class="nav-link">Options</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div id="sideBar">
+    </div>
+
+    <div id="mainGrid" >
+        <div id="fileview">
+            <div id="html1">
+                <ul>
+                  <li>Root node 1
+                    <ul>
+                      <li>Child node 1</li>
+                      <li><a href="#">Child node 2</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+        </div>
+        <div class="vertical-gutter"></div>
+        <div id="contentview">
+            
+            
+            
+
+        </div>        
+    </div>
+
+    <footer class="footer" id="statusBar">
+      <div class="container" >
+        <p class="text-muted">Place sticky footer content here.</p>
+      </div>
+    </footer>
+
+    <script>
+      $(function() {
+        Split({
+          columnGutters: [{
+            track: 1,
+            element: document.querySelector('.vertical-gutter'),
+          }]
+        })
+
+
+        $('#html1').jstree({
+          "plugins" : ["wholerow"],
+          "core" : {            
+            "animation" : 50
+          }
+
+        });
+      });
+    </script>
+  </body>
+</html>

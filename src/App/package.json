@@ -1,0 +1,28 @@
+{
+  "name": "guestivus",
+  "version": "1.0.0",
+  "description": "Guestivus: The Git client for the rest of us!",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/microsoft/Guestivus.git"
+  },
+  "author": "Geordie Moffatt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/microsoft/Guestivus/issues"
+  },
+  "homepage": "https://github.com/microsoft/Guestivus#readme",
+  "devDependencies": {
+    "bootstrap": "^4.3.1",
+    "electron": "^5.0.2",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.14.7",
+    "split-grid": "^1.0.9",
+    "font-awesome": "^4.7.0"
+  }
+}

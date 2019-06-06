@@ -1,0 +1,99 @@
+:root {
+    /* Put variables here */
+    --status-bar-height: 1.5em;
+    --status-bar-bgcolor: #B74615;
+    --nav-bar-height: 2em;
+    --side-bar-width: 50px;
+    --gutter-width: 3px;
+}
+
+html {   
+    height: 100vh;
+    font-family: Verdana;    
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left:var(--side-bar-width);
+    overflow: hidden;
+    width: 100%;
+    top: var(--nav-bar-height);
+    height: calc(100vh - var(--status-bar-height) - var(--nav-bar-height));
+}
+
+#superLayout {
+    display: grid;
+    grid-column-gap: 5px;
+    grid-gap: 5px;
+    
+}
+
+
+
+.vertical-gutter {
+    cursor: w-resize;    
+    background-color:#4D4D4D;
+}
+
+
+#mainGrid {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: calc(100vh - var(--status-bar-height) - var(--nav-bar-height));
+    grid-template-columns: 1fr 3px 1fr;
+}
+
+#navBar {
+    position: absolute;
+    top: calc(0px - var(--nav-bar-height));
+    left: calc(0px - var(--side-bar-width));
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: var(--nav-bar-height);
+    background-color:#4D4D4D;
+}
+
+#sideBar {
+    position: absolute;
+    top: 0px;
+    left: calc(0px - var(--side-bar-width));
+    margin: 0;
+    padding: 0;
+    width: var(--side-bar-width);
+    background-color:#333333;
+    height: calc(100vh - var(--status-bar-height) - var(--nav-bar-height));
+}
+
+#statusBar {
+    position: absolute;
+    bottom: calc(0 - var(--status-bar-height));
+    left: calc(0px - var(--side-bar-width));
+    width: 100%;
+    height: var(--status-bar-height); /* Set the fixed height of the footer here */
+    background-color: var(--status-bar-bgcolor);
+}
+
+
+#fileview {
+    overflow: auto;
+    min-width: 100px;
+    font-size: 90%;
+}
+
+#contentview {
+    min-width: 300px;
+}
+
+.navbar{
+    font-size: 0.8em;
+}
+.navbar-brand{
+    font-size: 0.8em;
+}
