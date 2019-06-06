@@ -1,6 +1,8 @@
 
 # Guestivus: The Git client for the rest of us!
 
+# This project is a work in progress.  Large design decisions are still being made
+
 # Motivation
 Git is a lot of things, but user friendly isn't one of them.  As the world moves to Git as a primary solution for version
 control, certain sectors are in danger of being marooned on proprietary technologies which have much friendly visual clients.
