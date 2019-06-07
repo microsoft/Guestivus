@@ -30,10 +30,10 @@ body {
 #superLayout {
     display: grid;
     grid-gap: var(--grid-gap);
-    grid-template-rows: 1fr var(--status-bar-height);
+    grid-template-rows: var(--nav-bar-height) 1fr var(--status-bar-height);
     grid-template-columns: var(--side-bar-width) 1fr;
     width: 100%;
-    height: calc(100vh - 30px);
+    height: 100vh;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -48,23 +48,21 @@ body {
 }
 
 #sideBar {
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
     background-color: #333333;
-    
 }
 
-
 #mainLayout {
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 #statusBar {
     grid-column-start: 1;
     grid-column-end: 3;
     
-    background-color: #C42C66;
+    background-color: #B74615;
 }
 
 
@@ -95,7 +93,7 @@ body {
 #utilTile {
     overflow: auto;
     grid-row-start: 1;
-    grid-row-end: 4;
+    grid-row-end: 4;    
 }
 
 #workTile {
@@ -109,11 +107,11 @@ body {
     grid-column-end: 4;    
 }
 
-.nav-item {
-    font-size: 200% !important;
-}
 
-.card-header {
-    
-    padding: 0;
+
+.navbar{
+    font-size: 0.8em;
+}
+.navbar-brand{
+    font-size: 0.8em;
 }

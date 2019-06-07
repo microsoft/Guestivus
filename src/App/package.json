@@ -23,6 +23,7 @@
     "jquery": "^3.4.1",
     "popper.js": "^1.14.7",
     "split-grid": "^1.0.9",
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "custom-electron-titlebar": "^3.0.8"
   }
 }
