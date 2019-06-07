@@ -23,65 +23,164 @@
   
   <body>
     <div id="superLayout">
-       
         <div id="sideBar">
             <ul class="nav flex-column">
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="la la-files-o"></i></a>
+                <li class="nav-item nav-item-large">
+                  <a class="nav-link"  data-toggle="tab" href="#work"><i class="la la-files-o"></i></a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="la la-gears"></i></a>
-                </li>                              
+                <li class="nav-item nav-item-large">
+                  <a class="nav-link"  data-toggle="tab" href="#settings"><i class="la la-gears"></i></a>
+                </li>
               </ul>
-
-            
         </div>
-        <div id="mainLayout">
-            <div id="resizableLayout">
-              <div id="utilTile">
-                  <div id="html1">
-                      <ul>
-                        <li>Root node 1
-                          <ul>
-                            <li>Child node 1</li>
-                            <li><a href="#">Child node 2</a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </div>
-              </div>
-              <div id="v-gutter">
-              </div>
-              <div id="workTile">
-                  <div id="accordion">
 
-                      <div class="card">
-                        <div class="card-header" id="headingOne">
-                         
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                              Collapsible Group Item #1
-                            </button>
-                         
-                        </div>                    
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                          <div class="card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                          </div>
+        <div id="mainLayout">
+            <div class="tab-content">
+                <div class="tab-pane active" id="work">
+                    <div id="resizableLayout">
+                        <div id="utilTile">
+                            <ul class="nav flex-row">
+                                <li class="nav-item nav-item-small">
+                                    <a class="nav-link"  href="#"><i class="la la-refresh"></i></a>
+                                  </li>
+                                  <li class="nav-item nav-item-small">
+                                    <a class="nav-link"  href="#"><i class="la la-upload"></i></a>
+                                  </li>
+                                  <li class="nav-item nav-item-small">
+                                      <a class="nav-link"  href="#"><i class="la la-download"></i></a>
+                                  </li>
+                            </ul>
+
+                            <div id="html1">
+                                <ul>
+                                  <li data-jstree='{"icon":"img/folder.png"}'>Repo Root
+                                    <ul>
+                                      <li data-jstree='{"icon":"img/file.png"}'>File</li>
+                                      <li data-jstree='{"icon":"img/file.png"}'>File</li>
+                                      <li data-jstree='{"icon":"img/folder.png"}'>Folder
+                                          <ul>
+                                              <li data-jstree='{"icon":"img/file.png"}'>File</li>
+                                              <li data-jstree='{"icon":"img/file.png"}'>File</li>
+                                          </ul>
+                                      </li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </div>
+                        </div>
+                        <div id="v-gutter">
+                        </div>
+                        <div id="workTile">
+                            <ul class="nav flex-row">
+                                <li class="nav-item nav-item-small">
+                                    <a class="nav-link"  href="#"><i class="la la-plus-circle"></i></a>
+                                  </li>
+                                  <li class="nav-item nav-item-small">
+                                    <a class="nav-link"  href="#"><i class="la la-bug"></i></a>
+                                  </li>                                  
+                            </ul>
+                            <div id="accordion">
+
+
+
+                                <div class="card">
+                                  <div class="card-header" id="headingOne">
+
+                                      <div class="work-card-header">
+                                          <div>
+                                            <span><a data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><i class="la la-toggle-down nav-item-small"></i></a></span>
+                                            <span><a data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">My Work Item 01</a></span>
+                                          </div>
+                                          <div>
+                                              <span><i class="la la-check-square nav-item-small"></i></span>
+                                              <span><i class="la la-undo nav-item-small"></i></span>
+                                              <span><i class="la la-times-circle nav-item-small"></i></span>
+                                          </div>                                          
+                                        </div>                                                                                    
+                                  </div>
+                                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                    <div class="card-body">
+                                      This is the description of a work item
+                                      <ul style="list-style-type:none;">
+                                          <li><i class="la la-file-o"></i>File 1</li>
+                                          <li><i class="la la-file-o"></i>File 2</li>
+                                          <li><i class="la la-file-o"></i>File 3</li>
+                                        </ul>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="card">
+                                  <div class="card-header" id="headingTwo">
+
+                                      <div class="work-card-header">
+                                          <div>
+                                            <span><a data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"><i class="la la-toggle-down nav-item-small"></i></a></span>
+                                            <span><a data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">My Work Item 02</a></span>
+                                          </div>
+                                          <div>
+                                              <span><i class="la la-check-square nav-item-small"></i></span>
+                                              <span><i class="la la-undo nav-item-small"></i></span>
+                                              <span><i class="la la-times-circle nav-item-small"></i></span>
+                                          </div>                                          
+                                        </div>                                                                                    
+                                  </div>
+                                  <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div class="card-body">
+                                      This is the description of a work item
+                                      <ul style="list-style-type:none;">
+                                          <li><i class="la la-file-o"></i>File 1</li>
+                                          <li><i class="la la-file-o"></i>File 2</li>
+                                          <li><i class="la la-file-o"></i>File 3</li>
+                                        </ul>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header" id="headingThree">
+  
+                                        <div class="work-card-header">
+                                            <div>
+                                              <span><a data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree"><i class="la la-toggle-down nav-item-small"></i></a></span>
+                                              <span><a data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">My Work Item 03</a></span>
+                                            </div>
+                                            <div>
+                                                <span><i class="la la-check-square nav-item-small"></i></span>
+                                                <span><i class="la la-undo nav-item-small"></i></span>
+                                                <span><i class="la la-times-circle nav-item-small"></i></span>
+                                            </div>                                          
+                                          </div>                                                                                    
+                                    </div>
+                                    <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordion">
+                                      <div class="card-body">
+                                        This is the description of a work item
+                                        <ul style="list-style-type:none;">
+                                            <li><i class="la la-file-o"></i>File 1</li>
+                                            <li><i class="la la-file-o"></i>File 2</li>
+                                            <li><i class="la la-file-o"></i>File 3</li>
+                                          </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+
+
+                              </div>
+                        </div>
+                        <div id="h-gutter">
+                        </div>
+                        <div id="propertiesTile">
+                            propertiesTile
                         </div>
                       </div>
+                </div>
+                <div class="tab-pane" id="settings">settings Tab.
 
-                     
-
-
-                    </div>
-              </div>
-              <div id="h-gutter">
-              </div>
-              <div id="propertiesTile">
-                  propertiesTile
-              </div>
+                </div>                
             </div>
         </div>
+
+        
         <div id="statusBar">
             statusBar
         </div>
