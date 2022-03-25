@@ -19,7 +19,7 @@
   "homepage": "https://github.com/microsoft/Guestivus#readme",
   "devDependencies": {
     "bootstrap": "^4.3.1",
-    "electron": "^5.0.2",
+    "electron": "^13.6.6",
     "jquery": "^3.4.1",
     "popper.js": "^1.14.7",
     "split-grid": "^1.0.9",
